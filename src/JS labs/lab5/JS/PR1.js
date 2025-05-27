@@ -16,6 +16,6 @@ function processEmployees(employeeNames) {
 processEmployees([
     'Silas Butler',
     'Adnaan Buckley',
-    'Juan Peterson',
+    'Egor Kuzmin',
     'Brendan Villarreal'
 ]);
