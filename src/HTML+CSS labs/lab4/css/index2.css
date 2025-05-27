@@ -1,0 +1,28 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh; /* Занимает всю высоту viewport */
+    margin: 0; /* Убираем стандартные отступы */
+    display: flex; /* Делаем body flex-контейнером */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    width: 100%; /* Занимает всю доступную ширину */
+}
+
+article {
+    width: 30%; /* Чтобы статьи не растягивались на всю ширину */
+    margin: 0 1%; /* Небольшие отступы между статьями */
+}

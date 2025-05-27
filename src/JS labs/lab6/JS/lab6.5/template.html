@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template.css">
+    <title>TABLE - SEARCH ENGINE</title>
+    <script src="./solution.js"></script>
+</head>
+
+<body>
+    <table class="container">
+        <thead>
+            <tr>
+                <th>Имя футболиста</th>
+                <th>Позиция футболиста</th>
+                <th>Стоимость футболиста</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Леонель Месси</td>
+                <td>Нападающий</td>
+                <td>40.000.000 $</td>
+            </tr>
+            <tr>
+                <td>Криштиану Роналду</td>
+                <td>Нападающий</td>
+                <td>60.000.000 $</td>
+            </tr>
+            <tr>
+                <td>Мануэль Нойер</td>
+                <td>Вратарь</td>
+                <td>25.000.000 $</td>
+            </tr>
+            <tr>
+                <td>Джуд Беллингем</td>
+                <td>Полузащитник</td>
+                <td>255.000.000 $</td>
+            </tr>
+            <tr>
+                <td>Серхио Рамос</td>
+                <td>Защитник</td>
+                <td>15.000.000 $</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
+
+    <script>
+        solve();
+    </script>
+</body>
+
+</html>

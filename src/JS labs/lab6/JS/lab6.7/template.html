@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="template.css">
+	<title>Locked Profile</title>
+</head>
+
+<body>
+	<div id="container">
+		<main id="main">
+
+			<div class="profile">
+				<img src="./iconProfile1.png" class="userIcon" />
+				<label>Lock</label>
+				<input type="radio" name="user1Locked" value="lock" checked>
+				<label>Unlock</label>
+				<input type="radio" name="user1Locked" value="unlock"><br>
+				<hr>
+				<label>Username</label>
+				<input type="text" name="user1Username" value="Егор" disabled readonly />
+				<div id="user1HiddenFields">
+					<hr>
+					<label>Email:</label>
+					<input type="email" name="Email пользователя" value="egor@mail.ru" disabled readonly />
+					<label>Age:</label>
+					<input type="email" name="Возраст" value="19" disabled readonly />
+				</div>
+				<button>Show more</button>
+			</div>
+
+			<div class="profile">
+				<img src="./iconProfile1.png" class="userIcon" />
+				<label>Lock</label>
+				<input type="radio" name="user2Locked" value="lock" checked>
+				<label>Unlock</label>
+				<input type="radio" name="user2Locked" value="unlock"><br>
+				<hr>
+				<label>Username</label>
+				<input type="text" name="user2Username" value="Роман" disabled readonly />
+				<div id="user2HiddenFields">
+					<hr>
+					<label>Email:</label>
+					<input type="email" name="user2Email" value="roman@mail.ru" disabled readonly />
+					<label>Age:</label>
+					<input type="email" name="user2Age" value="29" disabled readonly />
+				</div>
+				<button>Show more</button>
+			</div>
+
+			<div class="profile">
+				<img src="./iconProfile1.png" class="userIcon" />
+				<label>Lock</label>
+				<input type="radio" name="user3Locked" value="lock" checked>
+				<label>Unlock</label>
+				<input type="radio" name="user3Locked" value="unlock"><br>
+				<hr>
+				<label>Username</label>
+				<input type="text" name="user3Username" value="Валера" disabled readonly />
+				<div id="user3HiddenFields">
+					<hr>
+					<label>Email:</label>
+					<input type="email" name="user3Email" value="Valeraaa43@mail.com" disabled readonly />
+					<label>Age:</label>
+					<input type="email" name="user3Age" value="31" disabled readonly />
+				</div>
+				<button>Show more</button>
+			</div>
+		</main>
+	</div>
+	<script src="./app.js"></script>
+	<script>
+		window.onload = lockedProfile();
+	</script>
+</body>
+</html>

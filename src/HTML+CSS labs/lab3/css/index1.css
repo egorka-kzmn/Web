@@ -1,0 +1,9 @@
+.container {
+    width: 200px;
+    padding: 5px 20px;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(65, 223, 207);
+}

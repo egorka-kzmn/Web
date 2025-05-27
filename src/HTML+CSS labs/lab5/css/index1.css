@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Общий стиль для текста после двоеточия */
+span::after {
+    color: green;
+}
+
+/* Первая секция - ширина */
+.mq-width span::after {
+    content: "Viewport width is larger than 600px";
+}
+
+@media (max-width: 1000px) {
+    .mq-width span::after {
+        content: "";
+    }
+}
+
+/* Вторая секция - высота */
+.mq-height span::after {
+    content: "Viewport height is larger than 600px";
+}
+
+@media (max-height: 600px) {
+    .mq-height span::after {
+        content: "";
+    }
+}
+
+/* Третья секция - соотношение сторон */
+.mq-ar span::after {
+    content: "Aspect Ratio is larger than 8/5";
+}
+
+@media (max-aspect-ratio: 8/5) {
+    .mq-ar span::after {
+        content: "";
+    }
+}
